@@ -25,9 +25,9 @@ dist-ssr
 *.sw?
 
 reference
+design
 
 # evn variables
 .env
-
 # .yaml files
 *.yaml
