@@ -1,6 +1,7 @@
 // lib for utility functions
 
-const emailRegex = /[]/;
+// Regular expression for email validation as per HTML specification
+const emailRegExp = /^[\w.!#$%&'*+/=?^`{|}~-]+@[a-z\d-]+(?:\.[a-z\d-]+)*$/i;
 
 const formConstraints = [
   { type: "name", min: 2, max: 50 },
