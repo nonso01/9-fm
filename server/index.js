@@ -12,12 +12,15 @@ app.use(express.json());
 
 // app.use(express.static("../dist"));
 app.get("/", (req, res) => {
-  res.status(200).json({ status: "ok", message: "Server is running" });
+  res.status(200).json({ status: "ok", message: "Server is up and running" });
   // console.log(req.headers)
 });
 
-app.get("/api", (req, res) => {
-  res.status(200).json({ status: "ok", message: "API is working" });
+
+app.post("/api/form", (req, res) => {
+  const body = req?.body;
+  console.log(body);
+  res.status(201).json({ message: "form received" });
 });
 
 app.listen(port, (e) => {
