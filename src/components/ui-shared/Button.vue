@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
     <button
-      class="app-button w-30 h-12 rounded-sm bg-purple-600 flex items-center justify-center text-white cursor-pointer  font-medium"
+      class="app-button w-35 h-13 rounded-sm bg-blue-950 flex items-center justify-center text-white cursor-pointer  font-medium"
       :type="formType ? formType : undefined"
       @click="props.handleClick"
     >
